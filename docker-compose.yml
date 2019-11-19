@@ -32,6 +32,17 @@ services:
     ports:
       - "13000:27017"
 
+  manage:
+    <<: *node
+    image: danlynn/ember-cli:3.13.0
+    working_dir: /utilities/services/manage
+    entrypoint: ["ember"]
+    command: ["serve", "--port", "13002"]
+    tmpfs:
+      - /utilities/services/manage/tmp
+    ports:
+      - "13002:13002"
+
 volumes:
   mongodb: {}
   yarn-cache: {}
