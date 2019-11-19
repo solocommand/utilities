@@ -6,6 +6,11 @@
   "repository": "https://github.com/base-cms/utilities",
   "author": "Josh Worden <josh@limit0.io>",
   "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "private": true,
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
