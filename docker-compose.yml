@@ -40,6 +40,11 @@ services:
     ports:
       - "13000:27017"
 
+  redis:
+    image: redis:alpine
+    ports:
+      - "13003:6379"
+
   graphql:
     <<: *node
     working_dir: /utilities/services/graphql
@@ -52,6 +57,7 @@ services:
       EXTERNAL_PORT: 13001
     depends_on:
       - mongodb
+      - redis
     ports:
       - "13001:80"
 
