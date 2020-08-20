@@ -11,7 +11,7 @@
     "@base-cms/db": "1.0.0-rc.1",
     "@godaddy/terminus": "^4.1.0",
     "apollo-server-express": "^2.3.1",
-    "bcrypt": "^3.0.3",
+    "bcrypt": "^5.0.0",
     "bluebird": "^3.5.3",
     "cors": "^2.8.5",
     "envalid": "^4.1.4",
